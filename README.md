@@ -25,6 +25,18 @@ Eu atuo como **AI Product Builder**: uno **visão de produto, UX, arquitetura de
 
 ---
 
+### 🏗️ Vitrine Técnica Open-Source (Código, Testes & CI)
+
+> Repositórios públicos com foco em **problemas reais de produção**, seguindo o Padrão de Engenharia Matt1x (testes de falha, Docker Compose, GitHub Actions CI e seção explícita de *Limitações Conhecidas*):
+
+| Repositório | Foco de Engenharia | Destaques Técnicos |
+| :--- | :--- | :--- |
+| **[t1x-inventory-engine](https://github.com/Matt1x-T1x/t1x-inventory-engine)** | Concorrência & Transações | Transações atômicas (`BEGIN IMMEDIATE`), teste real de 10 compras simultâneas (zero overselling), rollback, migrations, OpenAPI, Docker & CI. |
+| **[t1x-billing-webhooks](https://github.com/Matt1x-T1x/t1x-billing-webhooks)** | Webhooks & Idempotência | Validação criptográfica HMAC-SHA256 (`timingSafeEqual`), tabela de idempotência (3x reenvio seguro), proteção contra eventos fora de ordem, Docker & CI. |
+| **[t1x-ai-support-triage](https://github.com/Matt1x-T1x/t1x-ai-support-triage)** | IA Resiliente & Evals | Saída JSON validada com `Zod`, fallback sem perda de dados (API 503 / JSON quebrado), fila de reprocessamento e **Eval Suite** com dataset rotulado no CI. |
+
+---
+
 ### 🚀 Projetos em Destaque (Ecossistema `T1x`)
 
 > *Os códigos-fonte comerciais/proprietários ficam em repositórios privados; abaixo estão as releases públicas oficiais com instaladores verificados.*
